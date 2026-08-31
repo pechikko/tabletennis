@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>ペチボード</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="header">
+<h1>ペチボード</h1>
+<button id="menuButton">⚙</button>
+<div id="menu">
+    <button id="resetButton">リセット</button>
+    <button id="changeName1Button">プレイヤー1の名前変更</button>
+    <button id="changeName2Button">プレイヤー2の名前変更</button>
+</div>
+</header>
+
+<div class="container">
+
+<div class="player1">
+    <h2 class="playerHeader">
+        <div>
+        <span id="server1">➤</span>
+        <span id="playerName1">プレイヤー1</span>
+        </div>
+        <div class="gameButtons">
+            <button id="gameMinus1">ー</button>
+            <span id="game1">0</span>
+            <button id="gamePlus1">＋</button>
+        </div>
+    </h2>
+
+    <div class="scoreArea">
+    <p id="score1">0</p>
+
+    <div class="buttons">
+    <button id="minus1" class="scoreButton">ー</button>
+    </div>
+    </div>
+</div>
+
+<div class="player2">
+    <h2 class="playerHeader">
+        <div>
+        <span id="server2"></span>
+        <span id="playerName2">プレイヤー2</span>
+        </div>
+        <div class="gameButtons">
+            <button id="gameMinus2">ー</button>
+            <span id="game2">0</span>
+            <button id="gamePlus2">＋</button>
+        </div>
+    </h2>
+
+    <div class="scoreArea">
+    <p id="score2">0</p>
+    
+    <div class="buttons">
+    <button id="minus2" class="scoreButton">ー</button>
+    </div>
+    </div>
+</div>
+
+</div>
+
+<!--
+<button id="resetbutton" class="menuButton">リセット</button>
+-->
+
+<script src="script.js"></script>
+
+</body>
+
+
+</html>
