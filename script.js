@@ -18,16 +18,40 @@ score1++;
 
 scoreDisplay1.textContent = score1
 
+if (score1 >= 11 && score1 - score2 >= 2 && score1 > score2) {
+    scoreDisplay1.style.color = "red";
+    scoreDisplay2.style.color = "black";
+} else {
+    scoreDisplay1.style.color = "black";
+} if (score2 - score1 <= 1) {
+    scoreDisplay2.style.color = "black";
+}
+
 updateServer();
 
 })
 
 minus1.addEventListener("click",function () {
+
 if (score1 > 0) {
-    score1--;
-    scoreDisplay1.textContent = score1;
-    updateServer();
+
+score1--;
+
+scoreDisplay1.textContent = score1;
+
+if (score1 >= 11 && score1 - score2 >= 2 && score1 > score2) {
+    scoreDisplay1.style.color = "red";
+    scoreDisplay2.style.color = "black";
+} else {
+    scoreDisplay1.style.color = "black";
+} if (score2 >= 11 && score2 - score1 >=2 && score2 > score1) {
+    scoreDisplay2.style.color = "red";
 }
+
+updateServer();
+
+}
+
 });
 
 //changeName1.addEventListener("click", function () {
@@ -48,16 +72,40 @@ score2++;
 
 scoreDisplay2.textContent = score2;
 
+if (score2 >= 11 && score2 - score1 >= 2 && score2 > score1) {
+    scoreDisplay2.style.color = "red";
+    scoreDisplay1.style.color = "black";
+} else {
+    scoreDisplay2.style.color = "black";
+} if (score1 - score2 <= 1) {
+    scoreDisplay1.style.color = "black";
+}
+
 updateServer();
 
 })
 
 minus2.addEventListener("click",function () {
+
 if (score2 > 0) {
-    score2--;
-    scoreDisplay2.textContent = score2;
-    updateServer();
+
+score2--;
+
+scoreDisplay2.textContent = score2;
+
+if (score2 >= 11 && score2 - score1 >= 2 && score2 > score1) {
+    scoreDisplay2.style.color = "red";
+    scoreDisplay1.style.color = "black";
+} else {
+    scoreDisplay2.style.color = "black";
+} if (score1 >= 11 && score1 - score2 >=2 && score1 > score2) {
+    scoreDisplay1.style.color = "red";
 }
+
+    updateServer();
+
+}
+
 });
 
 //changeName2.addEventListener("click", function () {
